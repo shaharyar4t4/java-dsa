@@ -6,24 +6,41 @@ public class insectionarray {
 
         // question: A value is insect in starting.....
 
+        //big notiation = o(n) just because of Loop
+
         int[] arr = { 10, 20, 30 };
 
-        // declare new value
+        // // declare new value
         int value = 5;
 
-        int[] newArr = new int[arr.length + 1]; // initialize new array and exist arr increase the arr size
-        newArr[0] = value;
+        // int[] newArr = new int[arr.length + 1]; // initialize new array and exist arr increase the arr size
+        // newArr[0] = value;
 
-        for (int i = 0; i < arr.length; i++) {
-            newArr[i + 1] = arr[i];
+        // for (int i = 0; i < arr.length; i++) {
+        //     // newArr[i +1] ka mtlab ye new value ab one se aayi gi
+        //     newArr[i + 1] = arr[i];
 
-            // at start [0] 5
-            // first [1] 10
-            // second [2] 20
-            // third [3] 30
+        //     // at start [0] 5
+        //     // first [1] 10
+        //     // second [2] 20
+        //     // third [3] 30
+        // }
+        // // System.out.println(newArr); // this command show the address of array
+        // System.out.println("the new Array value" + Arrays.toString(newArr));
+
+        // question: A value is insect in Ending.....
+
+        int[] newArr = new int[arr.length +1]; // this line show's increase the size of array
+        for(int i =0; i < arr.length; i++){
+            newArr[i] = arr[i];
+
+            // first [0] == 10
+            //second [1] == 20
+            // third [3] == 30
         }
-        // System.out.println(newArr); // this command show the address of array
-        System.out.println("the new Array value" + Arrays.toString(newArr));
+        newArr[arr.length] = value;  // last == 5
+
+        System.err.println(Arrays.toString(newArr));
 
     }
 }

@@ -30,17 +30,36 @@ public class insectionarray {
 
         // question: A value is insect in Ending.....
 
-        int[] newArr = new int[arr.length +1]; // this line show's increase the size of array
-        for(int i =0; i < arr.length; i++){
+        // int[] newArr = new int[arr.length +1]; // this line show's increase the size of array
+        // for(int i =0; i < arr.length; i++){
+        //     newArr[i] = arr[i];
+
+        //     // first [0] == 10
+        //     //second [1] == 20
+        //     // third [3] == 30
+        // }
+        // newArr[arr.length] = value;  // last == 5
+
+        // System.err.println(Arrays.toString(newArr));
+
+        // question: A value is insect in anywhere.....
+
+        int index = 2;
+        int[] newArr = new int[arr.length +1];
+
+        //index mean --> value index ta jaya gi phir break
+        for(int i=0; i< index; i++){ // 10 [0], break [index]
             newArr[i] = arr[i];
-
-            // first [0] == 10
-            //second [1] == 20
-            // third [3] == 30
         }
-        newArr[arr.length] = value;  // last == 5
 
-        System.err.println(Arrays.toString(newArr));
+        newArr[index] = value;  // index [2] = 5
+
+        for(int i = index; i< arr.length; i++){ // contiune 20[2], 30 [3]
+            newArr[i+1] = arr[i];   
+        }
+
+        System.out.println("the new ELement" + Arrays.toString(newArr));
+
 
     }
 }

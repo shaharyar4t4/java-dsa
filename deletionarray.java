@@ -14,7 +14,7 @@ public class deletionarray {
 
         // Delete for Ending..
         // int[] numbers = deletefromarray(number, number.length-1);
-        // System.out.println("After delete the Element: "+ Arrays.toString(numbers));
+        // System.out.println("After delete the Element: "+ Arrays.toString(numbers)); 
 
         // Delete for anywhere...
         int[] numbers = deletefromarray(number, 3);
@@ -29,7 +29,7 @@ public class deletionarray {
             return arr;
         }
         // declare new array..
-        int[] newArr = new int[arr.length - 1];
+        int[]  newArr = new int[arr.length - 1];
 
         // "i" is used for run the loop
         // "j" is used for as a counter of newArr.

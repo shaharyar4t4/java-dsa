@@ -11,5 +11,4 @@ public class averagearrayvalue{
 
     System.out.println("Average: " + average);
 }
-
 }

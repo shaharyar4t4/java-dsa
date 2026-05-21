@@ -1,3 +1,4 @@
+package array;
 
 public class intersumarray{
     public static void main (String [] agr){

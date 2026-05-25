@@ -29,4 +29,3 @@ public class palindromcheck {
 
 // IMPORTAMT "palindrome means: the word reads the same from left → right and right → left"
 
-// shaharyar  "a = 3" "h = 2" "r = 2"

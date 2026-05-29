@@ -34,6 +34,7 @@ public class deletionsinglelinkedlist {
     }
 
     // delete from starting...
+    // o(1) time complexity..
     public void deleteAtstart() {
         // if the list empty..
         if (head == null) {
@@ -46,6 +47,7 @@ public class deletionsinglelinkedlist {
     }
 
     // delete from Ending...
+    // o(n) time complexity
     public void deleteFormEnd() {
         // if the list empty..
         if (head == null) {
@@ -72,6 +74,7 @@ public class deletionsinglelinkedlist {
     }
 
     // delete form middle or any node...
+    // o (n) time complexity..
     public void deletefromindex(int index) {
         // if the list empty..
         if (head == null) {

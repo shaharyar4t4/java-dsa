@@ -35,6 +35,7 @@ public class insectionsinglelinkedlist {
             return;
         }
 
+        
         Node current = head; // current ki value first node hogi..
 
         // ye loop jab ta chala ga jab ta null na aayjaya means last node aaja

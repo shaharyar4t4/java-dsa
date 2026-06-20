@@ -63,7 +63,7 @@ public class queuearray {
     public boolean isFull() {
         return (count == capacity);
     }
-
+ // display the queue elements..
     public void printQueue() {
 
         if (isEmpty()) {

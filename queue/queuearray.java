@@ -81,6 +81,10 @@ public class queuearray {
     }
 
     public static void main(String[] args) {
+        //important notes :
+
+        // jab me value queue me add karta hu to rear ki value change hoti...
+        // jab me value queue se remove karta hu to front ki value change hoti hai ...
         queuearray queue = new queuearray(4);
 
         queue.enqueue(10);

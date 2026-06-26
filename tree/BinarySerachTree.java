@@ -44,6 +44,17 @@ public class BinarySerachTree {
         return root;
     }
 
+    // important notes: binary seach tree me hum most of the time hum inorder process use karta ha for sorting...
+    // beasuse it used the rule of left -> Root -> Right..
+
+    void inorder(Node root){
+        if(root == null) return;
+
+        inorder(root.leftchild);
+        System.out.print(root.data + " ");
+        inorder(root.rightchild);
+    }
+
     public static void main(String[] args) {
         BinarySerachTree bTree = new BinarySerachTree();
         bTree.insert(50);
@@ -52,6 +63,10 @@ public class BinarySerachTree {
         bTree.insert(20);
         bTree.insert(70);
         bTree.insert(80);
+        bTree.insert(90);
+
+        System.out.println("After the BST process...");
+        bTree.inorder(bTree.root);
 
     }
 

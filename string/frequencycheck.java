@@ -1,4 +1,3 @@
-package string;
 
 public class frequencycheck {
     public static void main(String[] args) {

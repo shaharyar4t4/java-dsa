@@ -1,4 +1,3 @@
-package string;
 
 public class palindromcheck {
     public static void main(String[] args) {

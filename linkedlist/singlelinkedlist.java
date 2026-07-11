@@ -1,4 +1,3 @@
-package linkedlist;
 
 public class singlelinkedlist {
     // single linked list class

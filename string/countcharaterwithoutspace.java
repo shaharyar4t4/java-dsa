@@ -1,4 +1,3 @@
-package string;
 
 public class countcharaterwithoutspace {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package array;
+
 public class arraybasic {
 
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class arraybasic {
 
         int[] myNumber = new int[5]; // Declaration + Size Initialization
 
-        int[] mynumbertwo = { 1, 2, 3, 4, 5, 6 }; 
+        int[] mynumbertwo = { 1, 2, 3, 4, 5, 6 };
 
         System.out.println("\n Element the [2]: " + mynumbertwo[2]);
 

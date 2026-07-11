@@ -1,4 +1,3 @@
-package linkedlist;
 
 public class circularlinkedlist {
     static class Node {

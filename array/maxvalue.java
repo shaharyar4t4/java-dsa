@@ -1,4 +1,3 @@
-package array;
 public class maxvalue {
     // Big Notation => 0(n)
     

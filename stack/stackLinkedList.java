@@ -1,4 +1,3 @@
-package stack;
 
 public class stackLinkedList {
     static class Node {

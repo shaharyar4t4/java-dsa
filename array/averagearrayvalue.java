@@ -1,4 +1,3 @@
-package array;
 public class averagearrayvalue{
     public static void main(String [] arg){
       int [] number = {10,20,30,40};

@@ -80,29 +80,85 @@ public class BinarySerachTree {
         }
     }
 
+    // this fnc is help to delete node in BST
+    Node delete(Node root, int key) {
+        if (root == null) {
+            System.out.println("Value: " + key + "Not Found!");
+        }
+        if (key < root.data) {
+            root.leftchild = delete(root.leftchild, key);
+        } else if (key > root.data) {
+            root.rightchild = delete(root.rightchild, key);
+        } else {
+            // implemention the three methods..
+            // 1. Node has no child
+            if (root.leftchild == null && root.rightchild == null) {
+                System.out.println("Delete Leaf(child) node: " + key);
+                return null;
+            }
+            // 2. node has one child.
+            else if (root.leftchild == null) {
+                System.out.println("Deleting node with one child: " + key);
+                return root.rightchild;
+            } else if (root.rightchild == null) {
+                System.out.println("Deleting node with one child: " + key);
+                return root.leftchild;
+            }
+
+            // 3. node has two child (move the min value and then delete)
+            System.out.println("Deleting the node have two child: " + key);
+            Node miNode = findMin(root.rightchild); // find Inorder successor
+            root.data = miNode.data; // copy the value and move then another roots.
+            root.rightchild = delete(root.rightchild, miNode.data);
+
+        }
+        return root;
+    }
+
+    Node findMin(Node root) {
+        if (root == null) {
+            return null;
+        }
+        while (root.leftchild != null) {
+            root = root.leftchild;
+        }
+        return root;
+
+    }
+
     public static void main(String[] args) {
         BinarySerachTree bTree = new BinarySerachTree();
         bTree.insert(50);
-        bTree.insert(40);
         bTree.insert(30);
-        bTree.insert(20);
         bTree.insert(70);
+        bTree.insert(20);
+        bTree.insert(40);
+        bTree.insert(60);
         bTree.insert(80);
-        bTree.insert(90);
 
         System.out.println("After the BST process...\n ");
         bTree.inorder(bTree.root);
 
-        int keyvalue;
-        System.out.println("\nEnter the value which you want to find... ");
-        Scanner input = new Scanner(System.in);
-        keyvalue = input.nextInt();
-        System.out.println("\nSeaching for " + keyvalue + ".......");
-        if (bTree.searchvalue(bTree.root, keyvalue)) {
-            System.out.println("Node: " + keyvalue + " found in BST");
-        } else {
-            System.out.println("Node is not found");
-        }
+        // int keyvalue;
+        // System.out.println("\nEnter the value which you want to find... ");
+        // Scanner input = new Scanner(System.in);
+        // keyvalue = input.nextInt();
+        // System.out.println("\nSeaching for " + keyvalue + ".......");
+        // if (bTree.searchvalue(bTree.root, keyvalue)) {
+        // System.out.println("Node: " + keyvalue + " found in BST");
+        // } else {
+        // System.out.println("Node is not found");
+        // }
+
+        // preform delete
+        System.out.println("\n Delete the nodes.. in BST");
+        // System.out.println("Deleting 50: ");
+        // bTree.root = bTree.delete(bTree.root, 50);
+        System.out.println("Deleting 70: ");
+        bTree.root = bTree.delete(bTree.root, 70);
+        System.out.println("\n Inorder Traversing After Deletion: ");
+        bTree.inorder(bTree.root);
+        System.err.println();
 
     }
 

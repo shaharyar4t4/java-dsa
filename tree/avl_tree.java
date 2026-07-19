@@ -118,18 +118,42 @@ public class avl_tree {
         return node;
     }
 
-    public void inorder(){
+    // prefrom inorder traversal..
+    public void inorder() {
         inorderRec(root);
         System.out.println();
     }
 
-    private void inorderRec(Node node){
-        if(node != null){
+    private void inorderRec(Node node) {
+        if (node != null) {
             inorderRec(node.leftchild);
-            System.out.println(node.key+ " ");
+            System.out.println(node.key + " ");
             inorderRec(node.righchild);
         }
     }
+
+    // Seraching feacture.
+    // time complex ===> o(n), Olog(n)
+    public boolean serach(int key) {
+        return serachRec(root, key);
+    }
+
+    private boolean serachRec(Node node, int key) {
+        // if the node value is not in tree so it become false mtlab kiya ap ki node
+        // value nhi ha ...
+        if (node == null) {
+            return false;
+        }
+        // if the node value is found in tree so it become true mtlab ap ki value node
+        // me ha ..
+        if (key == node.key) {
+            return true;
+        }
+        // if the node value small so move the left side tree while value is big then
+        // root node value so they move from the right treee..
+        return (key < node.key) ? serachRec(node.leftchild, key) : serachRec(node.righchild, key);
+    }
+
     public static void main(String[] args) {
         avl_tree avltree = new avl_tree();
         avltree.insert(30);
@@ -142,5 +166,8 @@ public class avl_tree {
         System.out.println("\n Inorder Treaversal");
         avltree.inorder();
 
+        System.out.println("\n Seraching input node value");
+        System.out.println("serach:  25 => " + avltree.serach(25));
+        System.out.println("Serach:  80 => " + avltree.serach(80));
     }
 }

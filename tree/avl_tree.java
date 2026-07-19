@@ -154,6 +154,73 @@ public class avl_tree {
         return (key < node.key) ? serachRec(node.leftchild, key) : serachRec(node.righchild, key);
     }
 
+    // find min value in right subtree
+    private Node minValueNode(Node node) {
+        Node current = node;
+        // ye loop chalata raha ga jab current ki value update or requried value mil na
+        // jaya
+        while (current.leftchild != null) {
+            current = current.leftchild;
+        }
+        return current;
+    }
+
+    // main logic of delete func
+    public void delete(int key) {
+        root = deleteRec(root, key);
+        System.out.println("Requested Delete: " + key);
+    }
+
+    // delete recursive
+    private Node deleteRec(Node node, int key) {
+        if (node == null) {
+            return null;
+        }
+
+        // if value is small key value check from the left tree
+        if (key < node.key) {
+            node.leftchild = deleteRec(node.leftchild, key);
+        }
+        // if value is big key value check from the right tree
+        else if (key > node.key) {
+            node.righchild = deleteRec(node.righchild, key);
+        } else {
+            // 1 - child or 0 child so ye process hoga..
+            if (node.leftchild == null || node.righchild == null) {
+                return (node.leftchild != null) ? node.leftchild : node.righchild;
+            }
+            // 2 child --> inorder successor
+            Node successor = minValueNode(node.righchild);
+            node.key = successor.key;
+            node.righchild = deleteRec(node.righchild, successor.key);
+        }
+        // height update
+        node.height = Math.max(height(node.leftchild), height(node.righchild)) + 1;
+        int balance = getBalance(node);
+
+        // LL rotation
+        if (balance > 1 && getBalance(node.leftchild) >= 0) {
+            return rotateRight(node);
+        }
+        // LR rotation
+        if (balance > 1 && getBalance(node.leftchild) < 0) {
+            node.leftchild = rotateLeft(node.leftchild);
+            return rotateRight(node);
+
+        }
+        // RR rotation
+        if (balance < -1 && getBalance(node.righchild) <= 0) {
+            return rotateLeft(node);
+        }
+        // RL rotation
+        if (balance < -1 && getBalance(node.righchild) > 0) {
+            node.righchild = rotateLeft(node.righchild);
+            return rotateLeft(node);
+
+        }
+        return node;
+    }
+
     public static void main(String[] args) {
         avl_tree avltree = new avl_tree();
         avltree.insert(30);
@@ -169,5 +236,10 @@ public class avl_tree {
         System.out.println("\n Seraching input node value");
         System.out.println("serach:  25 => " + avltree.serach(25));
         System.out.println("Serach:  80 => " + avltree.serach(80));
+
+        System.out.println("Delete value ");
+        avltree.delete(30);
+        System.out.println("\n InOrder Treasval After Deletion: ");
+        avltree.inorder();
     }
 }

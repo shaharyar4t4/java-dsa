@@ -30,7 +30,7 @@ public class recursion{
         // 5 + (4 + (3 + sum(2)))
         // 5 + (4 + (3 + (2 + sum(1))))
         // 5 + 4 + 3 + 2 + 1
-        = 15
+        // = 15
     
     }
 
@@ -39,16 +39,6 @@ public class recursion{
          System.out.println("the natural of sum value is: "+ sumNatural(10));
     } 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 // when user the input value 

@@ -1,0 +1,24 @@
+def: in short --> call itself is called recursion
+
+it make program is resuse or break big problem into small problems.
+Every recursion function must have.
+
+==> Base Case -> stop the recursion  --> (inshort hum ik condition dayta ha apni recursion process like is ko stop karna hota ha) --> ap ki condition ko break lagan it's means "baseCase"
+==> Recursive Case -> Continues the Recursion. --> (inshort ap ki Continues run karhi hogi) --> Continues run means "RecursiveCase"
+
+Call stack memory 
+Every recursive call is stored in the call Stack.. (Har call new stack me push hota) 
+Recursion same process used karta ha Stack used karta ha.. 
+
+back flow ye he is memory limit q kiya stack process is karta
+
+Type of Recursion
+1. Direct Recursion --> fnc call itself 
+2. indirect Recursion --> fnc A call B, B call A 
+3. Tail Recursion --> recursion call at the end of function
+4. Non - tail Recursion --> recursion call in middle of logic 
+
+IMPORTANT POINT --> Most recursion problem use non - tail recursion.
+
+loop -- > is best only for humme pata ha data kaha se kaha ta jaya ga..
+recursion --> is process complex like ik function kiya mutliple branch hogya..

@@ -1,0 +1,24 @@
+def Sorting Algorthim 
+=> it is process where the data is sorted in specific formate and also like assending order and desassending order..
+==> In short it's help to organize data so it becomes easier to serach, analyze, and process.
+
+TYPES
+1. Bubble sorting 
+    -> compare each "pair of adjacement" elements and swap if in wrong order.. 
+    -> small value front par aata ha or big value hoti wo last me chala jayata ha 
+
+2. Selection sorting
+   -> Find the minimum elements from the unsorted list and put it in the correct position
+   --> is me har attempt hum ik value nikalta ha is ko order kiya hesaab se place karta ha.
+
+3. Insertion Sorting
+ -> Pick an elements and insert it into it correct Postion in the already sorted part
+ -> is me hota ye ha kiya ik sorted part hota ha or ik unsorted part hota.. hum unsorted part value pick karta phir is ko shift karta ha sorted part me
+
+4. Merage sorting 
+ -> is ko  divide and conquer Algorthim bha bolta ha. is ki prefrom ase karta ha kiya kese array ko samll part me divide karta ha jab ta single element na raha jaya..
+ -> Divide the Array into halves until single elements remain. 
+
+5. quick sorted
+  -> is me hum ik value ko pivot conside or phir array ko 2 part me break karta ha.. phir is ko is way me align karta ha..
+  

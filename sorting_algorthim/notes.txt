@@ -21,4 +21,14 @@ TYPES
 
 5. quick sorted
   -> is me hum ik value ko pivot conside or phir array ko 2 part me break karta ha.. phir is ko is way me align karta ha..
+  -> it is very first on large dataset because work fast and efficiently...
+  -> is me pivot value jo kiya array ko divide karta ha into 2 part 
+  -> divide and conquer 
+      -> divide = splite array using pivot.
+      -> conquer = Recursively sort left and right parts
+      - > combine = no extra work needed(array is already sorted...)
+  -> small value of left array or large value right array par hogi...
+  Time complex => o(n log n) ==> best , avge case..
+  if you select worng pivot so is time comple 0(n^2) on worst case..
+  
   

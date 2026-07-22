@@ -1,3 +1,5 @@
+package sorting_algorthim;
+
 public class meragesorting{
  // is ka drop back ye ha kiya space complexcity = o(n) 
  // ye multiple array bohat bnta ha jese waja se hum use nhi karta ha like q humraha pass size limit hoti ha array ki..

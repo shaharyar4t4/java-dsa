@@ -1,3 +1,5 @@
+package sorting_algorthim;
+
 public class insectionsorting{
 
     // insection sort me array centre se work like value insert hoti centre add hoti phir wo sort hoti ha..

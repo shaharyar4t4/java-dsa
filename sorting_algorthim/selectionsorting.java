@@ -1,3 +1,5 @@
+package sorting_algorthim;
+
 public class selectionsorting{
 
     // time compex ==> o(n^2) in all case beasuse ik itentation me ik swapping hoti ha..

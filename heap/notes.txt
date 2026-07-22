@@ -1,0 +1,25 @@
+A heap is a special type of tree based data structure. (Binary Search tree)
+
+IMPORTANT POINT ==> Heap kabhi completed sorted data structure nhi hota means ye ik proper tree nhi hota ha..
+
+uses: 
+to find the most smallest and bigger value in seraching time by using heap
+In short is ko hum use tab karta jab humme minimum and maximum value nikal na hoti ha. tab hum Heap data structure use karta ha..
+Heap is always a completed Binary tree..
+
+types
+Min heap ==> Parent =< Children (is mtlab ha parent ki value small ha child se).
+--> is it used when find the min value fast way like => q kiya min humsha top par hoti...
+Max heap == > Parent >= Children (is ka mtlab ha Child ki value humsha small hoti ha Parent se)
+--> is it used when find the max value fastesr way me find karna ho.
+
+Heap vs BST
+
+1. Heap ik complete Binary tree hota jab Binary tree koi ase grante nhi data ha
+
+2. Heap only working min/max value (roots)
+   while tree is a sorted formate me hoti ha like Left < Root < Right Property.. kabhi ye BST unbalaned bha hota ha.
+
+3. Faster for Priority based access. and good for searching sorted  data.
+
+MAKE SURE ==> heap ka kam sorting karna nhi hota only mix/ min (Priority) value nikal hota ha.. sorting BST is good.

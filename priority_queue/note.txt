@@ -1,0 +1,21 @@
+what is priority queue?
+it is special type of queue because they work on the bases of priority mtlab kiya konse key value ki kiya priority ha..
+ye FIFO me kam nhi karta ha ..
+
+why it is important
+-->  task mangnment me bohat kam karti ha...
+--> scheduled task like colon job
+
+types
+1. Max priority queue  ==> sub se bari value humrhi priority hoti ha is ko hum (max priority bolta ha)
+2. Min priority queue ==> sub se small value humrho priority hoti ha is ko hum (min priority bolta ha )
+
+Time complex (Heap based)
+1. Delete (remove highest/ lowest): O(log n)
+2. peek (Get top element): 0(1)
+3. Seach: 0(n)
+
+hum na priority queue me linklist or Array ko q use nhi karaha ha ?
+integrated possible but inefficient hoti ha 
+
+make sure kiya har array --> heap hosaata ha but har heap --> array nhi hosaata ha q kiya.. array ka size limit hota ha..

@@ -1,4 +1,5 @@
 public class minheap{
+    // time complex ==> 0(log n)
 
     private int[] heap;
     private int size; // size of array like abhi array me kitna values ha..
@@ -58,7 +59,8 @@ public class minheap{
         }
 
     }
-
+    // time complex ==> 0(1)
+    // space complex ==> 0(n)
     // this method add the new value in last of heap..
     public int extractMin(){
         if(size == 0){

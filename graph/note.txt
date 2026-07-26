@@ -21,3 +21,22 @@ Unweighted graph
 All edges are treated equally with no weight..
 not mention any distance or cost..
 
+
+// graph representation
+
+The graph is store or represent use this method..
+
+// Adjacency Matrix: (it is not Memory effieient)
+-> Is a 2D array used to represent a graph. 
+-> Row and Columns represent Vertices.
+-> if there is an edges b/w vertex i and j, the cell contains 1 (or weight)... if there is no edges, the cell contain 0.
+
+-> Time Complexity --> 0(1) (Check edges existence)
+-> Space Complexity --> 0(V^2) (expenvise hota ha in team of Spaces.)
+
+// Adjacency List (it is Memory effieient most used in real world problems)
+-> represent a graph using an array of lists
+-> store only existing edges, not unnecessary data. best suited for sparse graph(Few edges)
+
+-> Time Complexity: 0(degree of vertex)
+-> Space Complexity: 0(V + E) (only store jese kiya pass prefect edges + nodes hota ye inko store karta ha.)

@@ -1,0 +1,23 @@
+A graph is a data sturcture used to represent relationships between differnet entities..
+
+it containe the node(called Vertices) and connected by links  (Called edges).
+
+Vertices --> represent entities or object (Node).
+edges --> show the conncetion b/w the two nodes.  (arrows)
+
+types of graph
+
+1. Directed graph
+edges have a Direction ( One way conncetion)..
+
+2. UnDirected graph
+edges have no Direction(Two  way conncetion).
+
+Weighted graph
+Each edges has a value (Weight) like: distance or time etc..
+let suppose google map use kar raha ho is me distance or time show when you reach the destination.. best example of Weighted graph
+
+Unweighted graph
+All edges are treated equally with no weight..
+not mention any distance or cost..
+

@@ -1,4 +1,3 @@
-
 public class AdjacencyList{
     public static void main(String [] args){
             Graph listshow = new Graph(4);

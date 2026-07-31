@@ -2,8 +2,34 @@
 BFS (Breath Frist Serach)
 -> it is algorithm to explore nodes level by level..
 -> it work like they visit frist all nearest nodes, then move deeper..
--> it work on queue data structure..  (FIFO) method..
+-> it work on (queue) data structure..  (FIFO) method..
 
 why it use: 
---> find shortest path in Unweighted graph
+--> find shortest path in Unweighted graph (good example of Google map)
 --> best for level based problem..
+
+DFS(depth frist Serach)
+-> DFS is explore as deeper as possible first goes deeper..
+-> DFS implement by using the recursion or (stuck)
+
+why it use
+--> jab ap ko deep me value ko check karta ha..
+--> it most use in limit memory size..
+
+File system (file inside file)
+sitmap of any website...
+
+
+interview
+
+BFS 
+--> level by level
+--> queue data structure
+--> bohat memory used karta ha..
+--> find shortest path
+
+DFS
+-->  move deeper..
+--> stuck data structure..
+--> bohat km memory use karta ha
+--> vist of child nodes.

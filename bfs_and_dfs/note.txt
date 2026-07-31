@@ -1,0 +1,9 @@
+
+BFS (Breath Frist Serach)
+-> it is algorithm to explore nodes level by level..
+-> it work like they visit frist all nearest nodes, then move deeper..
+-> it work on queue data structure..  (FIFO) method..
+
+why it use: 
+--> find shortest path in Unweighted graph
+--> best for level based problem..

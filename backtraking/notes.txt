@@ -1,0 +1,29 @@
+Back tracking
+
+--> back tracking is an algorthimic technique mostly it working on recurion and multiple solution of any output.
+--> In simple word back tracking is a recurion (call itself). on the other hand back tracking is a advance version of recurion.
+make sure BT is not working only recurion it also working undo, recurion and try next step..
+
+NOTES::
+make sure ---> har recurion process back tracking nhi hoti ha ... ha but har back tracking process recurion humsha hoti ha...
+jo is ka output aata ha is ko ye humsha check karta ha kiya ye valid ha kiya nhi ha... or agr value valid nhi hota ha is ko undo karta ha
+
+/// jab hum back tracking ki bt karta ha humsha hum "STATE SPACE TREE" kiya bar me bt karta ha...
+
+State Space tree --> ik concept jo most used hota ha back tracking ka process chalta ha..
+make sure ye tree ki traha act karta ha is me nodes or branch hoti ha.. 
+
+1. Each node ==> a decision 
+2. Each branch ==> an option
+3. Each path ==> a possible solution..
+
+algorthimic follow karta ha DFS(Depth frist serach ) ko..
+
+// it help to make the frist of your process
+pruning ==> ka mtlab hota ha "back tracking me jo possible node bakar hoti isko ye remove karta ha"
+
+Time Complex
+
+--> is ki Exponertial hota ha (worst case) me.. because it may explose many combinations.
+--> Example: 0(2^n), 0(N!) depending on problem..
+ 

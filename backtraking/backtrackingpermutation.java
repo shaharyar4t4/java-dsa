@@ -6,7 +6,7 @@ public class backtrackingpermutation{
         System.out.print("Enter a String to see it permutation: ");
         String str = input.next();
 
-        System.out.println("\n All permutations of + " + str + ": ");
+        System.out.println("\n All permutations of " + str + ": ");
 
         // this method prefrom the permutation process.. 
        // A permutation is the way a set of items is arranged or ordered where the order of the items matters
@@ -17,7 +17,7 @@ public class backtrackingpermutation{
 
     public static void findPermutations(String str, String currentPermutations){
         if(str.isEmpty()){
-            System.out.println("->" + currentPermutations);
+            System.out.println ("->" + currentPermutations);
             return;
         }
         for(int i = 0; i < str.length(); i++){

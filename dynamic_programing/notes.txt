@@ -1,0 +1,10 @@
+-> dynamic programing is an algorithm technique to solve the problem in efficiently way..
+-> it break the problem in to sub problem..
+--> the result of sub problem is store and reused again the solve the solve the problem in futher..
+--> mostly it used tu optmizated the programing..
+
+Dynamic programing or recursion is small?
+
+--> In recursion solve the problem by calling the same function repeatedly.. and it solve the same problem in many time..
+--> In dynamic programing improves recursion by storing previous result... so it is fast to solve the problem because it use unnecessary repeatetion..
+

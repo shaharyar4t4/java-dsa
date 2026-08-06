@@ -3,8 +3,32 @@
 --> the result of sub problem is store and reused again the solve the solve the problem in futher..
 --> mostly it used tu optmizated the programing..
 
-Dynamic programing or recursion is small?
+/// Dynamic programing or recursion is same?
 
 --> In recursion solve the problem by calling the same function repeatedly.. and it solve the same problem in many time..
 --> In dynamic programing improves recursion by storing previous result... so it is fast to solve the problem because it use unnecessary repeatetion..
+
+// Dynamic programing or backtracking is same?
+
+--> In backtracking program explore the all possible out comes and find the one is valid.. so the tries a choice and if it fails..
+--> Dynamic programing is only to focus the optimal solutions using stored result..
+
+Time complex
+> In backtracking the Time complex ==> exponential values..
+> In Dynamic programing is reduce complexity..
+
+// Overlapping subproblem..
+Overlapping means ha kiya Dynamic programing me hota ye ha kiya problem ko subproblem me divide kar kiya is ko solve karti phir
+is ko store karta ha ta kiya is ko infurther use karliya jaya..
+
+// optimal substructure..
+
+A problem has optimal substructure when its optimal solutions can be built from optimal solutions of smaller subproblem..
+good example is google map.. you find the shortest path distance A - to backtracking
+
+type of dynamic programing store..
+1. Memoization (Top-Down) => uses the recursion, result are store in a cache or array, easy to implemented..
+2. Tabulation (Bottom - Up) => start with small problem , move from the big problem..
+
+
 

@@ -1,0 +1,17 @@
+Bit Manipulation 
+
+-> The process is used in prefrom the operation on bits.
+
+Always check the bits values..
+5 = 101
+3 = 011  
+
+Bit Manipulation 
+AND (&)
+OR (||)
+XOR (^)
+NOT (~)
+Left Shift (<<) means kese bha number ko 2 multiple karna ho
+Right Shift (>>) mean kese bha number ko 10/5 divide karna ho
+
+it is mostly used machine language because it work on ACCII valus..

@@ -1,0 +1,24 @@
+-> Hashing is the process of converting data into a fixed size value called a hash
+-> Different input usually produce different hashes(but collision can occur).
+-> hashing ik one process means ap ki input value ko hash me shift phir back nhi like encrypted value decrypted hoti ha but hashing me ase process nhi hota ha..
+-> but hacker is process ko karsaata ha by using the brute froce attacks kiya through.. 
+
+// why use
+-> store secure any type of data
+-> enable fast searching(0(1)) in hash tables.
+
+used in 
+Cryptographic hashing
+non - Cryptographic hashing
+collision handling 
+chaining (open hashing).
+lineat probing  (Closed hashing)
+
+what is Salt ?
+
+Salt is a random value added to input before hashing.
+mostly this concept use in when two user have same password..
+
+for example  --> the password is same but the hash value is different..
+user one: (pass: 1234) ---> yrud56389snc
+user two: (pass: 1234) ---> urie82920ncb
